@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    background-color: red;
+    overflow-x: hidden;
+}
+.slider__item {
+    position: absolute;
+    height: 100%;
+    width: calc(100%/3); /* The second number indicates the number of slides */
+    background-color: blue;
+    font-size: 72px;
+    font-weight: bold;
+    transition: margin-left 0.4s, opacity 0s;
+}
+.slider__item::selection {
+    background: transparent;
+}
+.slider__item:nth-child(2n) {
+    background-color: green;
+}
+.btn {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    cursor: pointer;
+    font-size: 72px;
+}
+.btn::selection {
+    background: transparent;
+}
+#btn-right {
+    background-color: hotpink;
+}
